@@ -3,7 +3,7 @@
 # compiles the testbench, runs the simulation, and opens the waveform viewer
 # it supports different configurations specified by the user.
 
-.PHONY: all sim clean wvae interconnect help
+.PHONY: all sim clean wave interconnect help
 
 # top level #
 TOP         			= axi4_lite_interconnect
@@ -110,7 +110,7 @@ clean:
 
 help:
 	@echo "to run the simulation for a specific configuration, use:"
-	@echo "   make interconnect CONFIG=m2s2"
+	@echo "   make interconnect m2s2"
 	@echo "   notes:"
 	@echo "      handle both formats:	  1. make interconnect m2s2"
 	@echo "                                  2. make interconnect CONFIG=m2s2"
